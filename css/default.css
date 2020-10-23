@@ -1,7 +1,63 @@
-body {
-  margin: 0px;
-  padding: 0px;
+* {
+	font-size: 20px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	color: white;
 }
-/* Painel Superior */
+
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
 #header {
+	padding: 10px;
+	background-color: #9604ed;
 }
+#image-github {
+	position: relative;
+	text-align: center;
+}
+#text-over-image {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -10%);
+	z-index: -1;
+}
+#text-over-image a,
+#text-over-image a:hover {
+	font-weight: 400;
+	font-size: 1.4rem;
+	color: white;
+}
+#profile-photo {
+	width: 100%;
+	border-radius: 100%;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	transition: 500ms;
+}
+
+#header-name {
+	text-align: left;
+}
+#header-text {
+	text-align: justify;
+}
+
+/* EFFECTS */
+.blurred {
+	filter: blur(4px);
+	transition: 500ms;
+}
+.index-show {
+	transition: 500ms;
+	transform: translate(-50%, -50%) !important;
+	z-index: 1 !important;
+}
+#icon {
+	width: 1.4rem;
+	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(73deg) brightness(100%) contrast(103%);
+}
+/* EFFECTS END */
