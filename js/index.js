@@ -27,7 +27,7 @@ function resizeCards(){
         resizeHeight.style.height = newWidth + "px"
         if(mobile){
             // Add borders on mobile device. It's just prettier.
-            resizeHeight.style.border = "0.5px solid whitesmoke"
+            resizeHeight.style.borderBottom = "3px solid whitesmoke"
         }
     }
 }
