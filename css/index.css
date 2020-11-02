@@ -1,25 +1,25 @@
 /* PAGE CONFIG */
 * {
-	color: white;
+	color: var(--text);
 }
 body {
-	background-color: #fcfcfc;
+	background-color: var(--white);
 }
 a {
 	text-decoration: none;
-	color: white;
+	color: var(--text);
 }
 a:hover {
 	text-decoration: none;
 	font-weight: 500;
-	color: white;
+	color: var(--text);
 }
 /* PAGE CONFIG END */
 
 /* HEADER */
 #header {
 	padding: 10px;
-	background-color: #9604ed;
+	background-color: var(--main);
 }
 #header-text {
 	margin-top: 10px;
@@ -46,7 +46,7 @@ a:hover {
 #text-over-image a:hover {
 	font-weight: 400;
 	font-size: 1.2rem;
-	color: white;
+	color: var(--text);
 }
 #profile-photo {
 	width: 100%;
@@ -56,31 +56,31 @@ a:hover {
 	justify-content: center;
 	align-content: center;
 	transition: 500ms;
-	border: 5px solid white;
+	border: 5px solid var(--text);
 }
 /* HEADER END */
 
 /* CARDS */
 .my-card {
 	height: 700px;
-	background-color: #fcfcfc;
+	background-color: var(--white);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	align-self: center;
-	color: #9604ed;
+	color: var(--main);
 }
 .my-card p,
 .my-card h4 {
 	display: flex;
 	justify-content: center;
-	color: #9604ed;
+	color: var(--main);
 }
 .my-card:hover,
 .my-card:hover * {
-	background-color: #8d03dd;
-	color: white;
+	background-color: var(--main-darker);
+	color: var(--text);
 }
 .my-card:hover img {
 	background: none;
@@ -106,7 +106,7 @@ a:hover {
 .footer,
 .footer *,
 .footer:hover * {
-	background-color: #fcfcfc;
+	background-color: var(--white);
 	text-align: center;
 	color: gray;
 	font-size: 18px;
