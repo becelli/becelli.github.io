@@ -4,23 +4,28 @@ const height = window.innerHeight
 // Cards: Projects, Videos and Posts
 const numberOfCards = 3
 
+function resizePhoto(){
+    if (width < 540){
+        const profilePhoto = document.getElementById("profile-photo")
+        profilePhoto.style.width = '500px'
+    }
+}
+
 // Resize the width of the cards, based on which device is acessing.
 function resizeCards(){
-    var newWidth, mobile = 0;
-
+    var newWidth = 550, mobile = 0;
     // For mobile device
     if(width < 540){
         newWidth = 500;
         mobile = 1;
 
     // For extra-large screen
-    } else if(width > 992){
+    } else if(width > 1368){
         const headerHeight = document.getElementById("header").offsetHeight
         const footerHeight = document.querySelector(".footer").offsetHeight
         // The height of the cards will be perfectly to AVOID scrollbar
         newWidth = height - (headerHeight + footerHeight)
     }
-
     // Getting the elements and effectivelly changing height.
     for(let i = 0; i < numberOfCards; i++){
         const resizeHeight = document.querySelectorAll(".my-card")[i]
